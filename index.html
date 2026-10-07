@@ -30,7 +30,7 @@
   --g1-bg:#5C4314; --g1-fg:#F6DFAE; --g0-bg:#8E2E20; --g0-fg:#FBE3DD; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55;padding-inline:16px;padding-block:16px 40px;margin:0}
-.wrap{max-width:1180px;margin:0 auto;display:grid;gap:18px}
+.wrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
 .zh{font-family:var(--f-zh)}
 h1,h2,h3{text-wrap:balance;margin:0;line-height:1.25}
 button,select{font:inherit;color:inherit}
@@ -51,7 +51,7 @@ button,select{font:inherit;color:inherit}
 .title p{margin:2px 0 0;color:var(--muted);font-size:13.5px}
 
 .controls{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:end;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
-.ctl{display:grid;gap:3px;min-width:0}
+.ctl{display:grid;grid-template-columns:minmax(0,1fr);gap:3px;min-width:0;max-width:100%}
 .ctl label{font-size:12px;color:var(--muted);letter-spacing:.02em}
 select{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:6px 10px;max-width:100%}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--paper)}
